@@ -1,0 +1,132 @@
+:root {
+  --deep-blue: #0b1f35;
+  --steel-blue: #1f3b5c;
+  --silver: #cfd6df;
+  --light-silver: #f4f6f9;
+  --accent: #2f5d8a;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light-silver);
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, var(--deep-blue), var(--steel-blue));
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img { height: 60px; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: var(--silver);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover { color: var(--white); }
+
+.hero {
+  height: 700px;
+  background: linear-gradient(rgba(11,31,53,0.85), rgba(11,31,53,0.85)),
+              url('office.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 20px;
+}
+
+.hero h1 { font-size: 52px; margin-bottom: 20px; }
+.hero p { font-size: 20px; opacity: 0.9; }
+
+.hero-img {
+  width: 320px;
+  max-width: 90%;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--silver), var(--white));
+  color: var(--deep-blue);
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  flex
+}
+
+section { padding: 80px 10%; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: var(--deep-blue);
+}
+
+/* ABOUT */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.about-text ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+footer {
+  background: var(--deep-blue);
+  color: var(--silver);
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
