@@ -1,0 +1,90 @@
+body{
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:#f4f6f9;
+color:#1a1a1a;
+text-align:center;
+}
+
+header{
+background:#0b1f35;
+color:white;
+padding:20px;
+}
+
+header span{
+font-weight:300;
+}
+
+.hero{
+background:linear-gradient(rgba(11,31,53,0.7),rgba(11,31,53,0.7)),
+url('https://images.unsplash.com/photo-1497366216548-37526070297c');
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#2f5d8a;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.about,.services,.kontakt{
+padding:60px 20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:220px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+border-radius:10px;
+}
+
+.law{
+background:#0b1f35;
+color:white;
+padding:80px 20px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:0 auto;
+}
+
+input,textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#0b1f35;
+color:white;
+border:none;
+padding:12px;
+cursor:pointer;
+}
+
+footer{
+background:#081726;
+color:white;
+padding:20px;
+margin-top:40px;
+}
